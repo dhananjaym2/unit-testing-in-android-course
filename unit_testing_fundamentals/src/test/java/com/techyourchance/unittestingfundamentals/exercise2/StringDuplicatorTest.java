@@ -16,19 +16,19 @@ public class StringDuplicatorTest {
   }
 
   @Test
-  public void duplicateString_emptyString_emptyStringReturned() {
+  public void duplicateString_emptyString_emptyStringReturned() throws Exception {
     String result = SUT.duplicate("");
     assertThat(result, is(""));
   }
 
   @Test
-  public void duplicateString_singleCharacter_sameCharacterReturned() {
+  public void duplicateString_singleCharacter_sameCharacterReturned() throws Exception {
     String result = SUT.duplicate("a");
     assertThat(result, is("aa"));
   }
 
   @Test
-  public void duplicateString_longString_duplicateLongString() {
+  public void duplicateString_longString_duplicateLongString() throws Exception {
     String result = SUT.duplicate("Example");
     assertThat(result, is("ExampleExample"));
   }
